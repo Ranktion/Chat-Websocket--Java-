@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+		<!-- Title -->
+		<title>Chat</title>
+
+		<!-- Meta Tags -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+
+		<meta name="language" content="de" />
+		<meta name="audience" content="all" />
+		<meta name="cache-control" content="no-cache" />
+		<meta name="robots" content="index, robots" />
+		<meta name="pragma" content="no-cache" />
+
+		<!-- CSS Stylesheets -->
+		<link rel="stylesheet" type="text/css" href="style.css" />
+
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<!-- BEGIN Scripts -->
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="chat.js"></script>
+        <!-- END Scripts -->
+	</head>
+	<body>
+		<main class="grid">
+			<div class="table">
+				<div class="table-cell">
+					<section class="main">
+						<div class="after-connection">
+							<h2 id="users-online-count">Users online currently: <span class="count">0</span></h2>
+						</div>
+						<h2 id="connect-info" class="before-connection">Connecting...</h2>
+						
+						<div id="login" class="main after-connection">
+							<h2 class="mb10">Login</h2>
+							<form id="login-form" method="post" autocomplete="off">
+								<div id="login-msg"></div>
+								<input class="textbox mb10 block" name="login-username" id="login-username" type="text" placeholder="Username" />
+								<input class="textbox mb10 block" name="login-password" id="login-password" type="password" placeholder="Password" />
+								<input class="button block" type="submit" value="Login" />
+							</form>
+						</div>
+						
+						<div id="main">
+							<div class="after-connection">
+								<ul id="messages" class="mb10"></ul>
+								<form id="chat-form" method="post" autocomplete="off">
+									<input class="textbox mb10 block" name="text-message" id="text-message" type="text" placeholder="Message..." />
+									<input class="button inline-block" type="submit" value="Send" />
+									<span class="inline-block">or ENTER</span>
+								</form>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
