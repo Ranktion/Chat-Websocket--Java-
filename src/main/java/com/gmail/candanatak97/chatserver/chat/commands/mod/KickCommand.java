@@ -41,7 +41,7 @@ public class KickCommand implements ICommand {
 	public void handle(User session, ArrayList<String> params) {
 		PermissionCommand permissionCommand = getPermissionCommandManager().getPermission(getCommand());
 		
-		if(permissionCommand == null || session.getPrefix().getId() < permissionCommand.getMinPrefix()) {
+		if(permissionCommand == null || session.getPrefix() == null || session.getPrefix().getId() < permissionCommand.getMinPrefix()) {
 			session.send(new SendChatMessage("Permissions denied", "You don't have permissions for this command.", getPrefixManager().getPrefixById(1)));
 			return;
 		}
