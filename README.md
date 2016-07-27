@@ -1,12 +1,22 @@
 # Chat Websocket Java
+----
+
 This is a basic chat application with websockets that's programmed in java.
 
-# Installation
-* Open the Configuration.ini and change the connection data.
-* Import the .sql file to your database
-* Run the application
+### Version
+----
+0.0.1
 
-# Features
+### Installation
+----
+
+```sh
+$ git clone [https://github.com/C3010/Chat-Websocket--Java-] chat
+```
+
+### Features
+----
+
 * Commands
 * Prefixes
 * Login
@@ -14,5 +24,31 @@ This is a basic chat application with websockets that's programmed in java.
 * Badwords
 * and more!
 
-# Credits
+### Dependencies used
+----
+
+* webbit:org.webbitserver:0.4.6
+* mysql:mysql-connector-java:5.1.39
+* netty:org.jboss.netty:3.2.7
+
+### Todos
+----
+
+ - List of users there are online
+ - More commands
+
+### Credits
+----
+
 Candan T. (C3O, Can)
+
+### License
+----
+
+BSD
+
+
+**Free Software, yeah!**
+
+   [dill]: <https://github.com/C3010/Chat-Websocket--Java->
+   [git-repo-url]: <https://github.com/C3010/Chat-Websocket--Java-.git>
