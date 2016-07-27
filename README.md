@@ -40,7 +40,7 @@ $ git clone [https://github.com/C3010/Chat-Websocket--Java-] chat
 ### Credits
 ----
 
-Candan T. (C3O, Can)
+Candan T. (C3O / Can)
 
 ### License
 ----
